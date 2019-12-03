@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1960b045-a3a6-438b-9986-56d5ef275efd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day00/ex02/doft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day00/ex01/mendeleiev.html" beforeDir="false" afterPath="$PROJECT_DIR$/day00/ex01/mendeleiev.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/day00" />
+  </component>
+  <component name="ProjectId" id="1USx0wv6SjGIvWW3Qa2ydj61yio" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1960b045-a3a6-438b-9986-56d5ef275efd" name="Default Changelist" comment="" />
+      <created>1575363587192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575363587192</updated>
+      <workItem from="1575363602077" duration="29969000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="892" y="352" key="SettingsEditor" timestamp="1575382993078">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="892" y="352" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1575382993077" />
+    <state x="959" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1575363647429">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="959" y="523" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1575363647429" />
+    <state x="1592" y="358" width="667" height="714" key="find.popup" timestamp="1575382190484">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1592" y="358" width="667" height="714" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1575382190484" />
+  </component>
+</project>
