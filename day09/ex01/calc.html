@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+    <style>
+    body {
+        background-color: darkslategrey;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1 {
+        text-align: center;
+        margin: 4px 0 16px 0;
+    }
+    .calc {
+        width: 300px;
+        background-color: #ffffff;
+        margin: 30% auto;
+        padding: 50px 50px 50px 50px;
+        position: relative;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.3);
+    }
+    input, select {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        border: #ccc 1px solid;
+        border-radius: 5px;
+        text-align: center;
+    }
+    input[type='text'] {
+        width: 278px;
+        height: 30px;
+    }
+    select, input[type='submit'] {
+        width: 300px;
+        height: 40px;
+    }
+    select {
+        text-indent: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="calc">
+            <div class="circle"></div>
+            <h1>Калькулятор</h1>
+            <form action="" id="calc">
+                <input type="text" id="left">
+                <select id="op">
+                    <option value="add">+</option>
+                    <option value="min">-</option>
+                    <option value="mul">*</option>
+                     <option value="div">/</option>
+                     <option value="mod">%</option>
+                  </select>
+                <input type="text" id="right">
+                <input type="submit" id="submit" value="Try me!">
+            </form>
+        </div>
+    </div>
+    <script>
+    var calc;
+    var left;
+    var right;
+    var op;
+
+    window.onload = function () {
+        calc = document.querySelector("#calc");
+        left = document.querySelector("#left");
+        right = document.querySelector("#right");
+        op = document.querySelector("#op");
+        calc.addEventListener("submit", submit);
+        setInterval("alert('Please, use me...')", 30000)
+    }
+        
+    function numValid(l, r) {
+        return l == parseInt(l, 10) && l >= 0 && r == parseInt(r, 10) && r >= 0;
+    }
+        
+    function submit(event) {
+        event.preventDefault();
+        var l = Number(left.value);
+        var r = Number(right.value);
+        if (!numValid(left.value, right.value)) {
+            alert("Error :(");
+            return false;
+        }
+            
+        switch (op.value) {
+            case ('add'):
+                result(l + r);
+                break;
+            case ('mul'):
+                result(l * r);
+                break;
+            case ('div'):
+                if (r === 0) {
+                    result("It’s over 9000!");
+                } else {
+                    result(l / r);
+                }
+                break;
+            case ('mod'):
+                if (r === 0) {
+                    result("It’s over 9000!");
+                } else {
+                    result(l / r);
+                }
+                break;
+            case ('min'):
+                result(l - r);
+                break;
+            default:
+                result("error :)");
+                break;
+                }
+    }
+    
+    function result(res) {
+        console.log(res);
+        alert(res);
+    }
+    </script>
+    </body>
+</html>

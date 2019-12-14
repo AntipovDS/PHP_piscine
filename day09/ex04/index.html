@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX, stronger than dirt!</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+    <style>
+        body {
+            font: 12px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.2em;
+            color: #4d4d4d;
+            background-color: #e5e5e5;
+            width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            position: absolute;
+            top: -110px;
+            width: 100%;
+            font-size: 65px;
+            font-weight: bold;
+            text-align: center;
+            color: rgba(238, 112, 9, 0.5);
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+        }
+        .todo {
+            width:500px;
+            background-color: #ffffff;
+            margin:200px auto 0 auto;
+            position: absolute;
+        }
+        .todo:before{
+            content: '';
+            width:500px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 10px;
+            border-bottom: 2px solid red;
+            background: teal;  
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        #ft_list{
+            margin-top:16px;
+            font-size: 22px;
+        }
+        #ft_list:before {
+            content: '';
+            border-left: 1px solid red;
+            border-right: 1px solid red;
+            width: 2px;
+            position: absolute;
+            top: 0;
+            left: 40px;
+            height: 100%;
+        }
+        #ft_list div{
+            padding:10px 40px 10px 60px;
+            line-height: 40px;
+            border-bottom: 1px dotted #ccc;
+            position: relative;
+        }
+        #ft_list div:hover:after{
+            content:'x';
+            right: 15px;
+            position:absolute;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        #ft_list div:before{
+            content:'➔';
+            left: 12px;
+            position:absolute;
+            color: rgba(92, 41, 0, 0.5);
+        }
+        button{
+            width:100%;
+            height:60px;
+            background-color:#ffffff;
+            border:0px solid #ffffff;
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo">
+        <h1>TO DO</h1>
+        <div id="ft_list"></div>
+        <button id="new">New</button>
+    </div>
+</body>
+</html>
